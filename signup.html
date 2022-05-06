@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSENSE | SignUP</title>
+    <link rel="icon" href="./icons8-s-100.png">
+    <link rel="stylesheet" href="./style/signup.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="signup">
+        <p>CREATE AN ACCOUNT</p>
+        <form id="form">
+            <p>First Name</p>
+            <input type="text" placeholder="" class="style2" id="name">
+
+            <p>Last Name</p>
+            <input type="text" placeholder="" class="style2" id="last">
+
+            <p>Email Address</p>
+            <input type="email" placeholder="" class="style2" id="email">
+
+            <p>Password</p>
+            <input type="password" placeholder="" class="style2" id="password">
+
+            <p></p>
+            <input type="submit" value="CREATE  AN  ACCOUNT" class="style3">
+
+            <p id="back"><a href="login.html" class="back">BACK</a></p>
+        </form>
+        
+        <p>When you create an SSENSE account, we collect your email and other personal data to enhance your shopping experience and, subject to your agreement, to provide you with exclusive email updates, promotions and notifications. We may also use third party search engines and social media platforms to deliver our updates, promotions and notifications to you.</p>
+        <p>You may unsubscribe at any time.</p>
+        <p>To find out more, please visit our Privacy Policy.</p>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>
+
+<script src="./Script/signup.js"></script>
+
+
+<script type="module">
+    import navbar from "../components/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+
+    import footer from "../components/footer.js";
+
+    document.getElementById("footer").innerHTML = footer();
+</script>

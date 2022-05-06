@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSENSE | Checkout</title>
+    <link rel="icon" href="./icons8-s-100.png">
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <!-- <link rel="stylesheet" href="./CSS/cart.css"> -->
+    <link rel="icon" href="./icons8-s-100.png">
+    <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="Navbar">
+        <div class="left">
+        </div>
+        <div class="center">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXySrBTnz_jydwPgH0k4TVHBgAYKjwwSm2S8xVsBuwojLTJwRpAL8U1fFECBwySarZiA&usqp=CAU">
+        </div>
+        <div class="right">
+        </div>
+    </div>
+
+    <div id="checkout">
+        <div id="adress">
+            <p>CHECKOUT</p>
+            <p>SHIPPING ADDRESS</p>
+            <div class="first">
+                <input type="text" placeholder="*First Name">
+                <input type="text" placeholder="*Last Name">
+            </div>
+            <div class="second">
+                <input type="text" placeholder="*Street Address">
+                <input type="text" placeholder="Apt, Suite, floor">
+            </div>
+            <div class="third">
+                <input id="zip" type="text" placeholder="Zip Code">
+                <input type="text" placeholder="*City">
+                <input type="text" placeholder="STATE">
+                <input type="text" placeholder="COUNTRY">
+            </div>
+            <div class="four">
+                <input type="text" placeholder="*ENTER MOBILE">
+            </div>
+            <div id="shipping_method">
+                <p>SHIPPING METHOD</p>
+                <span>&#x2022;
+                    $40.00 USD | 5 - 7 days | Express
+                </span>
+                <p>PAYMENT METHOD</p>
+                <img
+                    src="https://res.cloudinary.com/ssenseweb/image/upload/v1535478719/web/checkout/mastercard_borderless_v2.svg">
+                <img
+                    src="https://res.cloudinary.com/ssenseweb/image/upload/v1535478719/web/checkout/visa_borderless_v2.svg">
+                <form>
+                    <input type="checkbox" id="paypal" name="paypal" value="Bike">
+                    <label for="paypal">Pay with debit card or Credit card</label><br>
+                    <input type="checkbox" id="Alipay" name="Alipay" value="Car">
+                    <label for="Alipay">Pay with paypal</label><br>
+                    <input type="checkbox" id="Visa" name="Visa" value="Boat">
+                    <label for="Visa">Pay with Alipay</label><br><br>
+                </form>
+            </div>
+            <div id="card_detail">
+                <p>CARD DETAILS</p>
+                <div class="card">
+                    <input type="text" placeholder="*Card Holder Number">
+                    <input type="text" placeholder="*Expiry Date">
+                </div>
+                <div class="card">
+                    <input type="text" placeholder="*Card Holder Name">
+                    <input type="text" placeholder="Security Code">
+                </div>
+            </div>
+
+            <div id="billing">
+                <p>BILLING ADRESS</p>
+                <form id="form">
+                    <input type="checkbox" id="paypal" name="paypal" value="Bike">
+                    <label for="paypal">Same as shipping adress</label><br>
+                </form>
+                <div class="first">
+                    <input type="text" placeholder="*First Name">
+                    <input type="text" placeholder="*Last Name">
+                </div>
+                <div class="second">
+                    <input type="text" placeholder="*Street Address">
+                    <input type="text" placeholder="Apt, Suite, floor">
+                </div>
+                <div class="third">
+                    <input id="zip" type="text" placeholder="Zip Code">
+                    <input type="text" placeholder="*City">
+                    <input type="text" placeholder="STATE">
+                    <input type="text" placeholder="COUNTRY">
+                </div>
+                <div class="four">
+                    <input type="text" placeholder="*ENTER MOBILE">
+                </div>
+            </div>
+            <div id="term">
+                <a href="">Terms and Conditions</a>
+                <a href="">Privacy</a>
+            </div>
+        </div>
+        <div id="append">
+            <p>Order Summary</p>
+            <div id="product"></div>
+            <p style="margin-top:30px; margin-bottom:0px">COUNTRY/REGION: INDIA / USD</p>
+            <hr>
+            <div id="summ">
+                <div>
+                    <p>Subtotal</p>
+                    <div id="total" style="margin-top:15px"></div>
+                </div>
+                <div>
+                    <p>Shipping Total</p>
+                    <p>(Free)</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Order Total (USD)</p>
+                    <div id="Total" style="margin-top:15px"></div>
+                </div>
+            </div>
+            <p style="margin-top:30px;margin-bottom:-10px">Important Notice</p>
+            <p>Our prices do not include Duty and VAT. Please consult your country/region’s customs legislation for more information about potential additional charges.</p>
+            <button id="butt"><a href="thankyou.html" style="text-decoration: none; color: white;">Place Order</a></button>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>
+
+<script src="./Script/checkout.js"></script>
+
+<script type="module">
+    import navbar from "../components/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+
+    import footer from "../components/footer.js";
+
+    document.getElementById("footer").innerHTML = footer();
+</script>

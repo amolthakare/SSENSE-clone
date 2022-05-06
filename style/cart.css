@@ -1,0 +1,92 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+#Cart{
+    width: 94%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#left{
+    width: 60%;
+    /* border: 3px solid blue; */
+    margin: auto;
+}
+#one{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    color: #888;
+    /* border-bottom: 1px solid #888 */
+}
+#prod{
+    display: flex;
+    border-bottom: 1px solid #888;
+    height: 130px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#prod img{
+    width: 75px;
+    height: 112.5px;
+}
+#tw{
+    display: flex;
+}
+#tw img{
+    width: 75px;
+    height: 112.5px;
+}
+#details{
+    margin-left: 34px;
+}
+#Shipping{
+    display: flex;
+    justify-content: space-between;
+}
+.Shipping{
+    margin-top: 9px;
+}
+
+#righte{
+    width: 25%;
+    /* border: 1px solid red; */
+    color: black
+}
+#righte input{
+    width: 280px;
+    height: 27px;
+}
+#righte button{
+    width: 288px;
+    height: 30px;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#righte a{
+    text-decoration: none;
+    color: white;
+}
+#Remove{
+    cursor: pointer;
+}
+/* #Remove{
+    margin-top: 100px;
+} */
+/* #three{
+    width: 94%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+} */
+
+#btnn:active {
+    transform: translateY(4px);
+  }

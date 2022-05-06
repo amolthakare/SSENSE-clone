@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/item_details.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>SSENSE | Item details</title>
+    <link rel="icon" href="./icons8-s-100.png">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="item_details">
+        <div id="left">
+            <div id="title_div"></div>
+
+            <p>Cotton jersey dress.</p>
+
+            <p>· Rib knit crewneck</p>
+            <p>· Logo flocked in off-white at front</p>
+            <p>· Rubberized logo patch at back</p>
+
+            <p>Please note that this item may not be shipped within the EU.</p>
+
+            <p>Supplier color: Oak</p>
+
+            <p>100% cotton.</p>
+
+            <p>Imported.</p>
+
+            <p>221161F052003</p>
+
+        </div>
+
+        <div id="img_div"></div>
+
+        <div id="right">
+            <div id="price_details"></div>
+            <select id="size">
+                <option >SELECT A SIZE</option>
+                <option >1==S - Only 3 Remaining</option>
+                <option >2==M - Only 4 Remaining</option>
+                <option >3==L - Only 2 Remaining</option>
+                <option>4==XL - Only 4 Remaining</option>
+                <option>5==XLL - Only 1 Remaining</option>
+            </select>
+
+            <div id="add_div"></div>
+
+            <p>Fit Predictor <u>Calculate your size</u></p>
+
+            <p>Model is 6ft 2" and wears size 3. <u>SIZE GUIDE</u></p>
+
+            <p style="color:#888888">India : Free shipping on orders over $500 USD</p>
+        </div>
+        
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>
+
+
+<script src="./Script/item_details.js"></script>
+
+<script type="module">
+    import navbar from "../components/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+
+    import footer from "../components/footer.js";
+
+    document.getElementById("footer").innerHTML = footer();
+</script>

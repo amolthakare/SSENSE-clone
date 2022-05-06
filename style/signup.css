@@ -1,0 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+p{
+    font-size: 11px;
+}
+#signup{
+    margin: auto;
+    width: 30%;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+#form{
+    margin: 30px;
+    margin-left: 0px;
+    margin-top: 100px;
+}
+#form input{
+    width: 422.75px;
+    height: 30px;
+
+}
+.style2{
+    margin-top: -7px;
+    margin-bottom: 5px;
+}
+.style3{
+    background-color: black;
+    color: white;
+    margin-left: 3px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#back{
+    text-align: center;
+}
+.back{
+    text-decoration: none;
+    color: black;
+}
+.style3:active {
+    transform: translateY(4px);
+  }
+  #back:active {
+    transform: translateY(4px);
+  }

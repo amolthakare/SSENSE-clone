@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSENSE | Login</title>
+    <link rel="icon" href="./icons8-s-100.png">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="login">
+        <p>LOGIN OR CREATE ACCOUNT</p>
+        <form id="form">
+
+            <p>Email Address :</p>
+            <input type="email" placeholder="" class="style2" id="email">
+
+            <p>Password :</p>
+            <input type="password" placeholder="" class="style2" id="password"><br>
+
+            <input type="submit" value="LOG IN" class="style3">
+        </form>
+
+        <p id="back">New customer? <a href="signup.html" class="back">CREATE  ACCOUNT</a></p>
+    
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>
+
+
+<script src="./Script/login.js"></script>
+
+<script type="module">
+    import navbar from "../components/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+
+    import footer from "../components/footer.js";
+
+    document.getElementById("footer").innerHTML = footer();
+</script>

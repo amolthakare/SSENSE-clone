@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSENSE | Thankyou</title>
+    <link rel="icon" href="./icons8-s-100.png">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div id="navbar" style="margin-top: 0px;"></div>
+    <!-- <h2 style="border:2px solid white;background-color:black;width: 280px; height: 50px;border-radius: 20px; margin-top: 20px;"><a href="index.html" style="text-decoration: none;margin-top: 20px; color: aliceblue;">MOVE TO HOME PAGE</a></h1> -->
+    <img src="https://static.knowledgebase.ai/upload/10142137/464c761d20-fabd610b2e6a53bf15e6.png" style="width:100%;margin-top: 0px;">
+    <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    import navbar from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = navbar();
+
+
+import footer from "../components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+</script>

@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+#wishlist_pg{
+    width: 50%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+}
+.Wishlist{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    row-gap: 50px;
+}
+
+.photo{
+    width: 218px;
+    height: 327px;
+}
+#btn{
+    width: 218px;
+    height: 37px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#btn:active {
+    background-color: #3f423f;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+.Remove{
+    /* margin-left: 45px; */
+    font-size: 13px;
+    /* text-align: center; */
+    width: 30%;
+    border: 1x solid green;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.Remove:active {
+  /* background-color: #8e918e; */
+  /* box-shadow: 0 2px rgb(206, 202, 202); */
+  transform: translateY(4px);
+}
